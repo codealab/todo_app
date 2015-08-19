@@ -11,6 +11,11 @@ class TasksController < ApplicationController
     redirect_to tasks_path
   end
 
+  def index
+    @tasks = Task.all
+    # render 'tasks/index.html.erb'
+  end
+
   private
 
   def task_params
