@@ -16,6 +16,12 @@ class TasksController < ApplicationController
     # render 'tasks/index.html.erb'
   end
 
+  def show
+    @task = Task.find(params[:id])
+    # render 'tasks/show.html.erb'
+  end
+
+
   private
 
   def task_params
